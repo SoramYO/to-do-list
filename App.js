@@ -58,10 +58,11 @@ const App = () => {
             );
           })}
         </View>
+        </ScrollView>
         <View>
           <Form onAddTask={handleAddTask} />
         </View>
-      </ScrollView>
+      
     </View>
   );
 };

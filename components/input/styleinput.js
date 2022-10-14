@@ -2,8 +2,6 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   footer: {
-    top: 140,
-    paddingTop: 250,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',

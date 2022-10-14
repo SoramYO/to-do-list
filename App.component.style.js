@@ -18,8 +18,5 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     marginHorizontal: 20,
   },
-  containers :{
-    flex : 1,
-  },
 });
 export default styles;

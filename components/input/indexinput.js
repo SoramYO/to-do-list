@@ -22,19 +22,14 @@ const Form = (props) => {
     Keyboard.dismiss();
   };
   return (
-      <KeyboardAvoidingView
-      behavior={Platform.OS === "ios" ? "padding" : "height"}
-      style={styles.containers}
-    >
+      
       <View style={styles.footer}>
-        <SafeAreaView>
           <TextInput
           value={task}
             onChangeText={(text) => setTask(text)}
             style={styles.input}
             placeholder="Your task"
           />
-        </SafeAreaView>
         <TouchableOpacity onPress={handleAddTask}>
           <View style={styles.addButton}>
             <View style={styles.plusButton}>
@@ -43,7 +38,6 @@ const Form = (props) => {
           </View>
         </TouchableOpacity>
       </View>
-    </KeyboardAvoidingView>
   );
 };
 export default Form;
